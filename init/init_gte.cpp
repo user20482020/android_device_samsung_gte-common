@@ -61,6 +61,11 @@ void init_target_properties(void)
 		model = (char *)"SM-T357T";
 		set_gsm_properties();
 	}
+	else if (bootloader.find("T355Y") == 0) {
+		device = (char *)"gt58ltedo";
+		model = (char *)"SM-T355Y";
+		set_gsm_properties();
+	}
 	else {
 		return;
 	}
